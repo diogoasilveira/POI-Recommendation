@@ -48,10 +48,16 @@ torchsummary==1.5.1
                   --batch 16 --epochs 200 --name exp1
   ```
 
-Original Dataset
+### Train the GETNext
 python train.py --data-train dataset/NYC/original/NYC_train.csv --data-val dataset/NYC/original/NYC_val.csv --data-adj-mtx dataset/NYC/original/graph_A.csv --data-node-feats dataset/NYC/original/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 32 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 1 --name <customize>
 
-Custom Dataset
+### Train the GeoContext2Vec
 python train.py --data-train dataset/NYC/cat_mapping/NYC_train_ALL_CAT_mapping.csv --data-val dataset/NYC/cat_mapping/NYC_val_ALL_CAT_mapping.csv --data-adj-mtx dataset/NYC/cat_mapping/graph_A.csv --data-node-feats dataset/NYC/cat_mapping/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name <customize>
 
-python test.py --state-dict ./runs/train/exp-geo-embed-10-epochs/checkpoints/best_epoch.state.pt --data-test dataset/NYC/cat_mapping/NYC_test_ALL_CAT_mapping.csv --data-adj-mtx dataset/NYC/cat_mapping/graph_A.csv --data-node-feats dataset/NYC/cat_mapping/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 1 --use-embeddings True --name exp-geo-embed-10-epochs
+### Train the Shortest Path
+
+### Train the GeoContext2BERT
+
+### Train the GeoContext2Vec + Shortest Path
+
+### Train the GeoContext2Bert + Shortest Path
