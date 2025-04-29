@@ -3,7 +3,7 @@
 This is the PyTorch implementation of the paper "POI Type Embedding Techniques for Recommendation Systems:
 A Comparative Analysis"
 
-![models-architecture](../models-architecture.pdf)
+![models-architecture](../models-architecture.png)
 
 ## Installation
 
