@@ -1,0 +1,1000 @@
+  577  source poi-sr/bin/activate
+  578  jupyter notebook --no-browser
+  579  cd poi-recommendation-TCC/
+  580  source poi-sr/bin/activate
+  581  cd Code/
+  582  rm nohup.out 
+  583  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom1
+  584  ls
+  585  python build_graph.py 
+  586  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom1
+  587  cd poi-recommendation-TCC/
+  588  source poi-sr/bin/activate
+  589  cd Code/
+  590  rm nohup.out 
+  591  jupyter notebook --no-browser
+  592  cd poi-recommendation-TCC/
+  593  source poi-sr/bin/activate
+  594  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  595  cd Code/
+  596  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  597  rm nohup.out 
+  598  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  599  ls
+  600  exit
+  601  clear
+  602  cd poi-recommendation-TCC/
+  603  source poi-sr/bin/activate
+  604  pip --list
+  605  pip list
+  606  pip install gensim==3.6.0
+  607  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  608  cd Code/
+  609  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  610  pip install scipy==1.10.1
+  611  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  612  vim train.py 
+  613  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  614  cd ..
+  615  vim poi-sr/lib/python3.10/site-packages/gensim/corpora/dictionary.py 
+  616  vim poi-sr/lib/python3.10/site-packages/gensim/models/doc2vec.py 
+  617  vim poi-sr/lib/python3.10/site-packages/gensim/models/fasttext.py 
+  618  cd Code/
+  619  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  620  cd ..
+  621  vim poi-sr/lib/python3.10/site-packages/gensim/corpora/dictionary.py 
+  622  python Code/train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  623  vim poi-sr/lib/python3.10/site-packages/gensim/models/doc2vec.py 
+  624  python Code/train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  625  cd Code/
+  626  ls geo2vec_embeddings/
+  627  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  628  cd poi-recommendation-TCC/
+  629  source poi-sr/bin/activate
+  630  cd Code/
+  631  jupyter notebook --no-browser
+  632  cd poi-recommendation-TCC/
+  633  source poi-sr/bin/activate
+  634  pip uninstall numpy
+  635  deactivate
+  636  cd ..
+  637  cd GETNext/
+  638  source GETNext/
+  639  source GETNext/bin/activate
+  640  pip list
+  641  deactivate
+  642  cd ..
+  643  cd poi-recommendation-TCC/
+  644  source poi-sr/bin/activate
+  645  pip list
+  646  pip unistall wheel
+  647  pip uninstall wheel
+  648  pip uninstall numpy
+  649  python --version
+  650  pip install numpy==1.21.6
+  651  exit
+  652  cd poi-recommendation-TCC/
+  653  source poi-sr/bin/activate
+  654  cd Code/
+  655  jupyter notebook --no-browser
+  656  cd poi-recommendation-TCC/
+  657  source poi-sr/bin/activate
+  658  cd Code/
+  659  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  660  pip install numpy==1.22.4
+  661  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  662  pip install numpy==1.24.1
+  663  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  664  vim requirements2.txt
+  665  pip install -r requirements2.txt 
+  666  vim requirements2.txt
+  667  exit
+  668  cd poi-recommendation-TCC/
+  669  source poi-sr/bin/activate
+  670  jupyter notebook --no-browser
+  671  cd poi-recommendation-TCC/
+  672  ls
+  673  cd Code/
+  674  vim requirements2.txt
+  675  rm requirements2.txt 
+  676  vim requirements2.txt
+  677  cd ..
+  678  source poi-sr/bin/activate
+  679  cd Code/
+  680  pip install -r requirements2.txt 
+  681  vim requirements2.txt
+  682  pip install -r requirements2.txt 
+  683  vim requirements2.txt
+  684  pip install -r requirements2.txt 
+  685  vim requirements2.txt
+  686  pip install -r requirements2.txt 
+  687  vim requirements2.txt
+  688  vim requirements2.txt
+  689  pip install -r requirements2.txt 
+  690  vim requirements2.txt
+  691  pip install -r requirements2.txt 
+  692  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  693  eeexit
+  694  cd GETNext/
+  695  cd ..
+  696  cd poi-recommendation-TCC/
+  697  source poi-sr/bin/activate
+  698  cd Code/
+  699  jupyter notebook --no-browser
+  700  cd poi
+  701  cd poi-recommendation-TCC/
+  702  source poi-sr/
+  703  source poi-sr/bin/activate
+  704  cd Code/
+  705  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expcustom
+  706  cd poi-recommendation-TCC/
+  707  source poi-sr/bin/activate
+  708  nohup jupyter notebook --no-browser
+  709  ls
+  710  mkdir poi-sr
+  711  cd poi-recommendation-TCC/
+  712  source poi-sr/bin/activate
+  713  ls
+  714  nohup jupyter notebook --no-browser
+  715  cd GETNext/
+  716  ls dataset/
+  717  cd runs/train/
+  718  ls
+  719  cd exp-7
+  720  ls
+  721  vim metrics-train.txt 
+  722  vim args.yaml 
+  723  cd ..
+  724  exit
+  725  cd poi-
+  726  cd poi-recommendation-TCC/
+  727  ls
+  728  vim nohup.out 
+  729  exit
+  730  cd poi-recommendation-TCC/
+  731  ls
+  732  vim nohup.out 
+  733  cd Code/
+  734  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name expzzz
+  735  cd ..
+  736  ls
+  737  source poi-sr/bin/activate
+  738  cd Code/
+  739  ls
+  740  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name ExpCustomNyc
+  741  ls
+  742  python build_graph.py 
+  743  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 1 --name ExpCustomNyc
+  744  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 32 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 16 --use-embeddings True --epochs 200 --name ExpCustomNycFinal
+  745  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 32 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 16 --use-embeddings True --epochs 200 --name ExpCustomNycFinal
+  746  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomNyc01 
+  747  cd poi-recommendation-TCC/
+  748  ls
+  749  cd Code/
+  750  rm nohup.out 
+  751  ls
+  752  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomNyc02 
+  753  cd ..
+  754  source poi-sr/bin/activate
+  755  cd Code/
+  756  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomNyc02 
+  757  cd GETNext/
+  758  ls
+  759  cd runs/train/exp
+  760  ls
+  761  vim metrics-train.txt 
+  762  vim metrics-val.txt 
+  763  cd ..
+  764  ls
+  765  cd exp-7
+  766  vim metrics-val.txt 
+  767  cd 
+  768  cd poi-recommendation-TCC/
+  769  cd Code/runs/train/ExpCustomNyc01
+  770  ls
+  771  vim metrics-val.txt 
+  772  inxi -Fxz
+  773  hwinfo
+  774  lshq
+  775  lshw
+  776  lshw -short
+  777  cd poi-recommendation-TCC/
+  778  ls
+  779  source poi-sr/
+  780  source poi-sr/bin/activate
+  781  cd Code/
+  782  nohup python train-custom.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpReplacePOIHead 
+  783  rm nohup.out 
+  784  nohup python train-custom.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpReplacePOIHead 
+  785  ls
+  786  cd poi-sr
+  787  ls
+  788  git clone https://github.com/nicolasmnl/poi-recommendation-TCC.git
+  789  python -m venv tcc
+  790  python3 -m venv tcc
+  791  source tcc/bin/activate
+  792  cd poi-recommendation-TCC/
+  793  cd Code/
+  794  vim requirements
+  795  ls
+  796  vim requirements.txt 
+  797  pip install -r requirements.txt 
+  798  vim requirements.txt 
+  799  pip install -r requirements.txt 
+  800  cd ..
+  801  exit
+  802  ls
+  803  rm poi-sr/
+  804  rm -r poi-sr/
+  805  rm -rf poi-sr/
+  806  ls
+  807  cd poi-recommendation-TCC/
+  808  ls
+  809  exit
+  810  cd GETNext/
+  811  source GETNext/bin/activate
+  812  jupyter notebook --no-browser
+  813  exit
+  814  cd GETNext/
+  815  ls
+  816  cd ..
+  817  ls
+  818  cd poi-recommendation-TCC/
+  819  ls
+  820  ls snap/
+  821  ls snap/node/
+  822  ls
+  823  cd poi-recommendation-TCC/
+  824  psql
+  825  psql diogosilveira
+  826  psql superuser
+  827  psql postgres
+  828  psql diogosilveira -u postgres
+  829  psql diogosilveira -U postgres
+  830  psql -h localhost -U postgres -d diogosilveira
+  831  psql postgres
+  832  sudo -i -u postgres
+  833  psql -h localhost -U postgres -d diogosilveira
+  834  psql diogosilveira
+  835  psql -h localhost -U diogosilveira -d diogosilveira
+  836  psql -h localhost -U postgres -d diogosilveira
+  837  psql -h localhost -U diogosilveira -d diogosilveira
+  838  cd Code/dataset/
+  839  ls
+  840  unzip 'TKY CA (1).zip' 
+  841  ls
+  842  unzip Gowalla-CA.zip 
+  843  cd ..
+  844  psql -h localhost -U diogosilveira -d diogosilveira
+  845  cd GETNext/
+  846  ls
+  847  cd ..
+  848  cd poi-recommendation-TCC/
+  849  ls
+  850  cd Code/
+  851  apt install osm2pgsql
+  852  sudo apt install osm2pgsql
+  853  sudo -u postgres createuser osmuser
+  854  sudo -u postgres createdb --encoding=UTF8 --owner=osmuser osm
+  855  sudo -u postgres psql osm --command='CREATE EXTENSION postgis;'
+  856  sudo -u postgres psql osm --command='CREATE EXTENSION hstore;'
+  857  cd poi-recommendation-TCC/
+  858  cd Code/
+  859  cd dataset/
+  860  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -P archdemon0 california-latest.osm.pbf
+  861  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -password archdemon0 california-latest.osm.pbf
+  862  PGPASSWORD=archdemon0 osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -password archdemon0 california-latest.osm.pbf
+  863  PGPASSWORD='archdemon0' osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -password archdemon0 california-latest.osm.pbf
+  864  export PGPASSWORD='password'
+  865  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -password archdemon0 california-latest.osm.pbf
+  866  export PGPASSWORD='archdemon0'
+  867  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -password archdemon0 california-latest.osm.pbf
+  868  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost california-latest.osm.pbf
+  869  psql diogosilveira -U diogosilveira
+  870  psql diogosilveira
+  871  psql -h localhost -U diogosilveira -d diogosilveira
+  872  cd poi-recommendation-TCC/
+  873  ls
+  874  cd Code/
+  875  ls
+  876  cd db_parser/
+  877  ls
+  878  wget "https://download.geofabrik.de/north-america/us/california-latest.osm.pbf"
+  879  ls
+  880  wget "https://download.geofabrik.de/north-america/us/nevada-latest.osm.pbf"
+  881  ls
+  882  rm nevada-latest.osm.pbf 
+  883  ls
+  884  df
+  885  rm california-latest.osm.pbf 
+  886  df
+  887  cd ..
+  888  ls
+  889  cd GETNext/
+  890  ls
+  891  cd dataset/
+  892  ls
+  893  rm -rf TKY/
+  894  df
+  895  ls
+  896  cd ..
+  897  ls
+  898  cd poi-recommendation-TCC/
+  899  ls
+  900  cd Code/
+  901  ls
+  902  cd dataset/
+  903  ls
+  904  rm Gowalla-CA.zip 
+  905  rm TKY.zip 
+  906  rm -rf NYC_new/
+  907  ls
+  908  cd ..
+  909  df
+  910  cd dataset/
+  911  wget "https://download.geofabrik.de/north-america/us/california-latest.osm.pbf"
+  912  df
+  913  ls
+  914  cd poi-recommendation-TCC/
+  915  cd Code/
+  916  cd dataset/
+  917  osm2pgsql california-latest.osm.pbf 
+  918  diogosilveira
+  919  cd poi-recommendation-TCC/
+  920  vim nohup.out 
+  921  df
+  922  ls
+  923  zip -r poi-sr.zip poi-recommendation-TCC/
+  924  ls
+  925  zip  poi-sr.zip poi-recommendation-TCC/ -x "poi-recommendation-TCC/poi-sr/"
+  926  ls
+  927  df
+  928  exit
+  929  cd poi-recommendation-TCC/
+  930  cd Code/
+  931  cd db_parser/
+  932  ls
+  933  psql -h localhost -U diogosilveira -d diogosilveira
+  934  ls
+  935  psql -h localhost -U diogosilveira -d diogosilveira
+  936  ls
+  937  ls -l
+  938  ls -l poi-sr.zip 
+  939  du -sh poi-sr.zip 
+  940  du -bsh *
+  941  psql -h localhost -U diogosilveira -d diogosilveira
+  942  mv poi-sr.zip ./poi-recommendation-TCC/
+  943  zip -r poi-recommendation-TCC.zip poi-recommendation-TCC -x "poi-recommendation-TCC/poi-sr/*"
+  944  ls
+  945  du 
+  946  clear
+  947  du -sh poi-recommendation-TCC.zip 
+  948  mv poi-recommendation-TCC.zip ./poi-recommendation-TCC/
+  949  psql -h localhost -U diogosilveira -d diogosilveira
+  950  psql diogosilveira
+  951  psql -h localhost -U postgres -d diogosilveira
+  952  cd poi-recommendation-TCC/
+  953  cd Code/
+  954  ls
+  955  ls db_parser/
+  956  ls data
+  957  ls dataset/
+  958  cd db_parser/
+  959  wget "https://download.geofabrik.de/north-america/us/nevada-latest.osm.pbf"
+  960  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost nevada-latest.osm.pbf 
+  961  export PGPASSWORD='archdemon0'
+  962  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost nevada-latest.osm.pbf 
+  963  wget "https://learnosm.org/files/default.style~"
+  964  wget "https://learnosm.org/files/default.style"
+  965  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -S default.style nevada-latest.osm.pbf 
+  966  cd poi-recommendation-TCC/
+  967  cd Code/
+  968  cd db_parser/
+  969  ls
+  970  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -S default.style  nevada-latest.osm.pbf 
+  971  export PGPASSWORD='archdemon0'
+  972  osm2pgsql -c -d diogosilveira -U diogosilveira -H localhost -S default.style  nevada-latest.osm.pbf 
+  973  psql -h localhost -U postgres -d diogosilveira
+  974  psql -h localhost -U diogosilveira -d diogosilveira
+  975  psql -h localhost -U diogosilveira -d postgres
+  976  clear
+  977  psql -h localhost -U diogosilveira -d postgres
+  978  psql -h localhost -U diogosilveira -d pois_gowalla
+  979  ls
+  980  cd poi-recommendation-TCC/
+  981  cd Code/
+  982  cd db_parser/
+  983  ls
+  984  psql -h localhost -U diogosilveira -d pois_gowalla
+  985  cd ..
+  986  sudo apt-get install osmosis
+  987  cd db_parser/
+  988  ls
+  989  wget "https://download.geofabrik.de/north-america/us/california-latest.osm.pbf"
+  990  cd poi-recommendation-TCC/
+  991  cd Code/
+  992  cd db_parser/
+  993  ls
+  994  osmosis --rb california-latest.osm.pbf  --rb nevada-latest.osm.pbf --merge --wb gowalla.osm
+  995  df
+  996  rm gowalla.osm 
+  997  df
+  998  cd ..
+  999  ls
+ 1000  cd GETNext/
+ 1001  ls
+ 1002  cd dataset/
+ 1003  ls
+ 1004  cd NYC/
+ 1005  ls
+ 1006  rm graph_A.csv 
+ 1007  rm graph_X.csv 
+ 1008  rm graph.pkl 
+ 1009  ls
+ 1010  rm graph_edge.edgelist 
+ 1011  rm graph_node_id2idx.txt 
+ 1012  ls ..
+ 1013  cd ..
+ 1014  cd CA/
+ 1015  ls
+ 1016  rm graph_A.csv 
+ 1017  rm graph_X.csv 
+ 1018  ls ..
+ 1019  ls
+ 1020  cd ..
+ 1021  ls
+ 1022  cd ..
+ 1023  ls
+ 1024  df
+ 1025  cd ..
+ 1026  cd poi-recommendation-TCC/
+ 1027  cd Code/
+ 1028  cd db_parser/
+ 1029  ls
+ 1030  osmosis --rb california-latest.osm.pbf  --rb nevada-latest.osm.pbf --merge --wb gowalla.osm
+ 1031  df
+ 1032  osm2pgsql -c -d pois_gowalla -U diogosilveira -H localhost -S default.style gowalla.osm 
+ 1033  export PGPASSWORD='archdemon0'
+ 1034  osm2pgsql -c -d pois_gowalla -U diogosilveira -H localhost -S default.style gowalla.osm 
+ 1035  osm2pgsql -c -d pois_gowalla -U diogosilveira -H localhost  gowalla.osm 
+ 1036  ls
+ 1037  rm gowalla.osm 
+ 1038  apt-get install osmium
+ 1039  sudo apt-get install osmium
+ 1040  sudo apt-get install osmium-tool
+ 1041  osmium merge california-latest.osm.pbf nevada-latest.osm.pbf -o gowalla.osm.pbf
+ 1042  osm2pgsql -c -d pois_gowalla -U diogosilveira -H localhost  gowalla.osm 
+ 1043  osm2pgsql -c -d pois_gowalla -U diogosilveira -H localhost  gowalla.osm.pbf 
+ 1044  df
+ 1045  trash-list
+ 1046  trash
+ 1047  cd ..
+ 1048  ls
+ 1049  cd ..
+ 1050  ls
+ 1051  ls diogo/
+ 1052  cd diogo/
+ 1053  ls .local/
+ 1054  ls .local/share/Trash/
+ 1055  cd .local/share/Trash/
+ 1056  ls
+ 1057  ls files/
+ 1058  ls info/
+ 1059  cd ..
+ 1060  cd Trash/
+ 1061  rm -rf files/
+ 1062  ls
+ 1063  rm -rf info/
+ 1064  ls
+ 1065  cd ..
+ 1066  ls
+ 1067  cd poi-recommendation-TCC/
+ 1068  df
+ 1069  ls
+ 1070  cd C
+ 1071  cd Code/
+ 1072  ls
+ 1073  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1074  ls
+ 1075  cd db_parser/
+ 1076  ls
+ 1077  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1078  cd ..
+ 1079  ls
+ 1080  ls ..
+ 1081  ls ../..
+ 1082  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1083  exit
+ 1084  df
+ 1085  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1086  ls
+ 1087  ps
+ 1088  ps -ef
+ 1089  cd poi-recommendation-TCC/
+ 1090  ls
+ 1091  vim nohup.out 
+ 1092  a
+ 1093  rm nohup.out 
+ 1094  ls
+ 1095  jupyter notebook --no-browser
+ 1096  source poi-sr/bin/activate
+ 1097  ls
+ 1098  jupyter notebook --no-browser
+ 1099  a
+ 1100  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1101  cd poi-recommendation-TCC/
+ 1102  cd Code/
+ 1103  cd db_parser/
+ 1104  ls
+ 1105  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1106  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1107  cd poi-recommendation-TCC/
+ 1108  cd Code/
+ 1109  ls
+ 1110  cd db_parser/
+ 1111  ls
+ 1112  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1113  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1114  df
+ 1115  ps -ef
+ 1116  kill -9 245444
+ 1117  kill 245444
+ 1118  ps -efcd
+ 1119  df[B
+ 1120  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1121  ls
+ 1122  cd GETNext/
+ 1123  ls
+ 1124  exit
+ 1125  cd poi-recommendation-TCC/
+ 1126  ls
+ 1127  cd Code/
+ 1128  cd ..
+ 1129  cd GETNext/
+ 1130  ls
+ 1131  vim build_graph.py 
+ 1132  cd dataset/CA/
+ 1133  ls
+ 1134  vim gowalla_test.csv 
+ 1135  cd ..
+ 1136  cd poi-recommendation-TCC/
+ 1137  source poi-sr/bin/activate
+ 1138  cd Code/
+ 1139  python build_graph.py 
+ 1140  cd ../../..
+ 1141  cd diogo/
+ 1142  ls
+ 1143  cd GETNext/
+ 1144  vim build_graph.py 
+ 1145  jupyter notebook
+ 1146  cd GETNext/
+ 1147  python build_graph.py 
+ 1148  source GETNext/bin/activate
+ 1149  python build_graph.py 
+ 1150  cd dataset/
+ 1151  ls
+ 1152  deactivate
+ 1153  cd ../..
+ 1154  cd poi-recommendation-TCC/
+ 1155  ls
+ 1156  cd poi-recommendation-TCC/
+ 1157  cd Code/dataset/
+ 1158  ls
+ 1159  unzip TKY\ CA\ \(1\).zip 
+ 1160  ls
+ 1161  unzip Gowalla-CA.zip 
+ 1162  ls
+ 1163  cd ..
+ 1164  ls
+ 1165  vim nohup.out 
+ 1166  rm nohup.out 
+ 1167  cd ..
+ 1168  source poi-sr/bin/activate
+ 1169  cd Code/
+ 1170  nohup python train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomCA
+ 1171  cd ..
+ 1172  deactivate
+ 1173  cd ..
+ 1174  cd GETNext/
+ 1175  cd dataset/
+ 1176  ls
+ 1177  wget "https://drive.google.com/file/d/1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj/view?usp=drive_link"
+ 1178  ls
+ 1179  rm view\?usp\=drive_link 
+ 1180  cd ..
+ 1181  source GETNext/bin/activate
+ 1182  cd dataset/
+ 1183  gdown https://drive.google.com/file/d/1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj/view?usp=drive_link
+ 1184  ls
+ 1185  https://drive.google.com/file/d/1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj
+ 1186  https://drive.google.com/file/d/1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj/
+ 1187  gdown https://drive.google.com/file/d/1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj/
+ 1188  gdown https://drive.google.com/file/d/1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj
+ 1189  ls
+ 1190  rm 1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj 
+ 1191  rm yv3wlu42.part 
+ 1192  gdown 1az2l-frX-JT4Gn-f9v3sovOG8K8lNWYj
+ 1193  unzip TKY\ CA.zip 
+ 1194  unzip CA
+ 1195  ls
+ 1196  unzip Gowalla-CA.zip 
+ 1197  ls
+ 1198  mv graph_A.csv CA/
+ 1199  mv graph_X.csv CA/
+ 1200  ls
+ 1201  ls CA/
+ 1202  cd ..
+ 1203  python train.py --data-train dataset/CA/gowalla_train.csv
+ 1204  cd poi-recommendation-TCC/
+ 1205  source poi-sr/bin/activate
+ 1206  cd poi-recommendation-TCC/
+ 1207  source poi-sr/bin/activate
+ 1208  ls
+ 1209  cd Code
+ 1210  cd poi-recommendation-TCC/
+ 1211  ls
+ 1212  source poi-sr/
+ 1213  source poi-sr/bin/activate
+ 1214  cd Code/
+ 1215  ls dataset/NYC
+ 1216  python build_graph.py 
+ 1217  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name expShortestPathNYC
+ 1218  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings False --epochs 200 --name expShortestPathNYC
+ 1219  cd ..
+ 1220  cd GETNext/
+ 1221  ls
+ 1222  python train.py --data-train dataset/NYC/NYC_train.csv
+ 1223  cd GETNext/
+ 1224  python train.py --data-train dataset/NYC/NYC_train.csv
+ 1225  source GETNext/bin/activate
+ 1226  python train.py --data-train dataset/NYC/NYC_train.csv
+ 1227  python build_graph.py 
+ 1228  python train.py --data-train dataset/NYC/NYC_train.csv
+ 1229  cd GETNext/
+ 1230  ls
+ 1231  unzip ShortestPath.zip 
+ 1232  ls
+ 1233  cd ..
+ 1234  cd poi-recommendation-TCC/
+ 1235  source poi-sr/
+ 1236  source poi-sr/bin/activate
+ 1237  ls
+ 1238  cd Code/
+ 1239  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1240  cd poi-recommendation-TCC/
+ 1241  source poi-sr/bin/activate
+ 1242  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1243  cd Code/
+ 1244  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1245  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name expShortestNYC
+ 1246  cd ..
+ 1247  cd Code/
+ 1248  python train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomCA
+ 1249  cd GETNext/
+ 1250  source GETNext/bin/activate
+ 1251  ls
+ 1252  vim dataloader.py 
+ 1253  vim build_graph.py 
+ 1254  ls dataset/
+ 1255  python train.py --data-train dataset
+ 1256  jupyter python --no-browser
+ 1257  jupyter notebook --no-browser
+ 1258  ls
+ 1259  ps -ef
+ 1260  kill 327924
+ 1261  ps -ef
+ 1262  python train.py --data-train dataset/NYC/NYC_train.csv
+ 1263  cd ..
+ 1264  deactivate
+ 1265  cd poi-recommendation-TCC/
+ 1266  source poi-sr/bin/activate
+ 1267  cd Code/
+ 1268  ls
+ 1269  python train.py --data-train dataset/NYC/original_reduced/NYC_train_original_reduced.csv --data-val dataset/NYC/original_reduced/NYC_val_original_reduced.csv --data-adj-mtx dataset/NYC/original_reduced/graph_A.csv --data-node-feats dataset/NYC/original_reduced/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1270  python train.py --data-train dataset/NYC/NYC_train_original_reduced.csv --data-val dataset/NYC/NYC_val_original_reduced.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1271  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1272  python train.py --data-train dataset/NYC/NYC_train.csv
+ 1273  ls
+ 1274  zip ShortestPath/
+ 1275  zip -r ShortestPath.zip ShortestPath/
+ 1276  cd ..
+ 1277  cd GETNext/
+ 1278  jupyter notebook
+ 1279  cd poi-recommendation-TCC/
+ 1280  source poi-sr/bin/activate
+ 1281  cd Code/
+ 1282  nohup python train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomCAFinal
+ 1283  ls
+ 1284  vim nohup.out 
+ 1285  rm nohup.out 
+ 1286  nohup python train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomCAFinal
+ 1287  ps -ef
+ 1288  kill 332644
+ 1289  ps -ef
+ 1290  clear
+ 1291  cd poi-recommendation-TCC/
+ 1292  cd Code/
+ 1293  cd dataset/
+ 1294  cd CA/
+ 1295  vim graph_A.csv 
+ 1296  cd ../..
+ 1297  ls
+ 1298  source ../poi-sr/bin/activate
+ 1299  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1300  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 245 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1301  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 246 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1302  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1303  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 245 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1304  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 32 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name exp-new-york-embed-200
+ 1305  cd poi-recommendation-TCC/
+ 1306  source poi-sr/bin/activate
+ 1307  jupyter server list
+ 1308  jupyter notebook stop 8889
+ 1309  jupyter server list
+ 1310  cd ..
+ 1311  ls
+ 1312  cd diogo/.local/share/Trash/
+ 1313  ls
+ 1314  cd files/
+ 1315  ls
+ 1316  cd ExpNYCShortestPath/
+ 1317  ls
+ 1318  cd ..
+ 1319  trash-restore
+ 1320  restore-trash
+ 1321  mv ExpNYCShortestPath/ ../../../../poi-recommendation-TCC/Code/runs/train/
+ 1322  cd ../../..
+ 1323  cd ..
+ 1324  ls
+ 1325  cd poi-recommendation-TCC/
+ 1326  source poi-sr/bin/activate
+ 1327  cd Code/
+ 1328  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name expzzz
+ 1329  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name expSP+GC2V
+ 1330  nophup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name expSP+GC2V
+ 1331  nohup python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name expSP+GC2V
+ 1332  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name expBERT
+ 1333  source poi-recommendation-TCC/poi-sr/bin/activate
+ 1334  jupyter server list
+ 1335  cd poi-recommendation-TCC/
+ 1336  source poi-sr/bin/activate
+ 1337  cd Code/
+ 1338  df
+ 1339  cd ..
+ 1340  ls
+ 1341  cd Code/
+ 1342  cd dataset/
+ 1343  ls
+ 1344  ls NYC
+ 1345  cd ..
+ 1346  python build_graph.py 
+ 1347  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 280 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCleaningDataSet
+ 1348  cd poi-recommendation-TCC/
+ 1349  source poi-sr/bin/activate
+ 1350  cd Code/
+ 1351  python train.py --data-train dataset/NYC/NYC_train.csv --data-val dataset/NYC/NYC_val.csv --data-adj-mtx dataset/NYC/graph_A.csv --data-node-feats dataset/NYC/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name SPCG
+ 1352  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name SPCG
+ 1353  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name SPCG --cat-embed-dim 175
+ 1354  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name ShortestPGeoContext --cat-embed-dim 175
+ 1355  cd poi-recommendation-TCC/
+ 1356  cd Code/
+ 1357  source ../poi-sr/bin/activate
+ 1358  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name b
+ 1359  ps -ef
+ 1360  cd poi-recommendation-TCC/
+ 1361  source poi-sr/bin/activate
+ 1362  cd Co
+ 1363  cd Code/
+ 1364  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name bert --cat-embed-dim 175
+ 1365  cd poi-recommendation-TCC/
+ 1366  source poi-sr/bin/activate
+ 1367  cd Code/
+ 1368  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name bert --cat-embed-dim 3072
+ 1369  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name bert --cat-embed-dim 3072
+ 1370  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name NYCBert --cat-embed-dim 3072
+ 1371  df
+ 1372  ps -ef
+ 1373  sudo reboot
+ 1374  ls
+ 1375  cd poi-recommendation-TCC/
+ 1376  source poi-sr/bin/activate
+ 1377  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name NYCBert --cat-embed-dim 30clear
+ 1378  ls
+ 1379  exit
+ 1380  ls
+ 1381  exit
+ 1382  ls
+ 1383  cd poi-recommendation-TCC/
+ 1384  source poi-sr/bin/activate
+ 1385  ls
+ 1386  cd Code/
+ 1387  ls
+ 1388  rm nohup.out 
+ 1389  ls
+ 1390  df
+ 1391  exit
+ 1392  cd poi-recommendation-TCC/
+ 1393  source poi-sr/bin/activate
+ 1394  ls
+ 1395  jupyter server
+ 1396  jupyter server list
+ 1397  jupyter notebook list
+ 1398  jupyter server stop 8888
+ 1399  jupyter server stop 
+ 1400  jupyter notebook
+ 1401  ls
+ 1402  cd poi-recommendation-TCC/
+ 1403  source poi-sr/bin/activate
+ 1404  ls
+ 1405  jupyter notebook list
+ 1406  jupyter notebook --no-browser
+ 1407  cd poi-recommendation-TCC/
+ 1408  source poi-sr/bin/activate
+ 1409  cd Code/
+ 1410  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name bert --cat-embed-dim 3072
+ 1411  nvidia-smi
+ 1412  export PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True"
+ 1413  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name bert --cat-embed-dim 3072
+ 1414  PYTORCH_CUDA_ALOOC_CONF
+ 1415  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name bert --cat-embed-dim 3072
+ 1416  cd poi-recommendation-TCC/
+ 1417  source poi-sr/bin/activate
+ 1418  jupyter notebook list
+ 1419  jupyter notebook --no-browser
+ 1420  ython train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomCA
+ 1421  cd poi-recommendation-TCC/
+ 1422  source poi-sr/bin/activate
+ 1423  python train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomCA
+ 1424  cd Code/
+ 1425  python train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name ExpCustomCA
+ 1426  nohup python train.py --data-train dataset/CA/gowalla_train.csv --data-val dataset/CA/gowalla_val.csv --data-adj-mtx dataset/CA/graph_A.csv --data-node-feats dataset/CA/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32 --cat-embed-dim 140 --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --use-embeddings True --epochs 200 --name CaliforniaGeoContext
+ 1427  cd poi-recommendation-TCC/
+ 1428  source poi-sr/bin/activate
+ 1429  jupyter notebook --no-browser
+ 1430  source poi-recommendation-TCC/
+ 1431  cd poi-recommendation-TCC/
+ 1432  source poi-sr/bin/activate
+ 1433  cd poi-recommendation-TCC/
+ 1434  source poi-sr/bin/activate
+ 1435  jupyter server list
+ 1436  jupyter notebook --no-browser
+ 1437  exit
+ 1438  ls
+ 1439  ls Code/
+ 1440  rm Code/
+ 1441  rm -rf Code/
+ 1442  cd poi-recommendation-TCC/
+ 1443  source poi-sr/bin/activate
+ 1444  cd ..
+ 1445  jupyter notebook --no-browser
+ 1446  ls
+ 1447  cd poi-recommendation-TCC/
+ 1448  source poi-sr/bin/activate
+ 1449  jupyter notebook --no-browser
+ 1450  exit
+ 1451  cd poi-recommendation-TCC/
+ 1452  source poi-sr/bin/activate
+ 1453  jupyter notebook --no-browser
+ 1454  cd poi-recommendation-TCC/
+ 1455  ls
+ 1456  source poi-sr/bin/activate
+ 1457  cd Code/
+ 1458  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name BertPCA --cat-embed-dim 1433
+ 1459  exit
+ 1460  cd poi-recommendation-TCC/
+ 1461  source poi-sr/bin/activate
+ 1462  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name BERTPCA --cat-embed-dim 1024
+ 1463  cd poi-recommendation-TCC/
+ 1464  source poi-sr/bin/activate
+ 1465  jupyter notebook --no-browser
+ 1466  ps -ef
+ 1467  kill 5198
+ 1468  ps -ef
+ 1469  exit
+ 1470  cd poi-recommendation-TCC/
+ 1471  source poi-sr/bin/activate
+ 1472  jupyter notebook --no-browser
+ 1473  exit
+ 1474  cd poi-recommendation-TCC/
+ 1475  source poi-sr/bin/activate
+ 1476  exit
+ 1477  cd poi-recommendation-TCC/
+ 1478  source poi-sr/bin/activate
+ 1479  jupyter notebook --no-browser
+ 1480  cd poi-recommendation-TCC/
+ 1481  source poi-sr/bin/activate
+ 1482  jupyter notebook --no-browser
+ 1483  exit
+ 1484  cd  poi-recommendation-TCC/
+ 1485  source poi-sr/bin/activate
+ 1486  nohup jupyter notebook --no-browser
+ 1487  cd poi-recommendation-TCC/
+ 1488  source poi-sr/bin/activate
+ 1489  jupyter notebook --no-browser
+ 1490  exit
+ 1491  cd poi-recommendation-TCC/
+ 1492  cd Code/
+ 1493  vim nohup
+ 1494  ls
+ 1495  vim nohup.out 
+ 1496  cd poi-recommendation-TCC/
+ 1497  ls
+ 1498  source poi-sr/bin/activate
+ 1499  jupyter notebook list
+ 1500  cd Code/
+ 1501  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name BERTPCA128 --cat-embed-dim 512
+ 1502  cd poi-recommendation-TCC/
+ 1503  source poi-sr/bin/activate
+ 1504  jupyter notebook list
+ 1505  exit
+ 1506  cd poi-recommendation-TCC/
+ 1507  source poi-sr/bin/activate
+ 1508  ls
+ 1509  jupyter notebook list
+ 1510  jupyter notebook --no-browser
+ 1511  cd poi-recommendation-TCC/
+ 1512  source poi-sr/bin/activate
+ 1513  jupyter notebook --no-browser
+ 1514  htop
+ 1515  cd poi-recommendation-TCC/
+ 1516  source poi-sr/bin/activate
+ 1517  cd Code/
+ 1518  clear
+ 1519  clear
+ 1520  cd poi-recommendation-TCC/
+ 1521  source poi-sr/bin/activate
+ 1522  jupyter notebook --no-browser
+ 1523  cd poi-recommendation-TCC/
+ 1524  source poi-sr/bin/activate
+ 1525  cd Code/
+ 1526  cd poi-recommendation-TCC/
+ 1527  source poi-sr/bin/activate
+ 1528  jupyter notebook --no-browser
+ 1529  cd poi-recommendation-TCC/
+ 1530  source poi-sr/bin/activate
+ 1531  cd Code/
+ 1532  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name bert32 --cat-embed-dim 128
+ 1533  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name FinalBert32 --cat-embed-dim 128
+ 1534  htop
+ 1535  cd poi-recommendation-TCC/
+ 1536  source poi-sr/bin/activate
+ 1537  jupyter notebook --no-browser
+ 1538  cd poi-recommendation-TCC/
+ 1539  source poi-sr/bin/activate
+ 1540  jupyter notebook --no-browser
+ 1541  cd poi-recommendation-TCC/
+ 1542  source poi-sr/bin/activate
+ 1543  jupyter notebook --no-browser
+ 1544  cd poi-recommendation-TCC/
+ 1545  source poi-sr/bin/activate
+ 1546  jupyter notebook --no-browser
+ 1547  cd poi-recommendation-TCC/
+ 1548  source poi-sr/bin/activate
+ 1549  jupyter notebook --no-browser
+ 1550  cd poi-recommendation-TCC/
+ 1551  source poi-sr/bin/activate
+ 1552  cd Code/
+ 1553  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name NewWeightsGC2V --cat-embed-dim 140
+ 1554  cd poi-recommendation-TCC/
+ 1555  source poi-sr/bin/activate
+ 1556  jupyter notebook --no-browser
+ 1557  cd poi-recommendation-TCC/
+ 1558  source poi-sr/bin/activate
+ 1559  jupyter notebook --no-browser
+ 1560  cd poi-recommendation-TCC/
+ 1561  source poi-sr/bin/activate
+ 1562  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name NewWeights --cat-embed-dim 32
+ 1563  cd Code/
+ 1564  python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name NewWeights --cat-embed-dim 32
+ 1565  nohup python train.py --data-train dataset/NYC_new/NYC_train.csv --data-val dataset/NYC_new/NYC_val.csv --data-adj-mtx dataset/NYC_new/graph_A.csv --data-node-feats dataset/NYC_new/graph_X.csv --time-units 48 --time-feature norm_in_day_time --poi-embed-dim 128 --user-embed-dim 128 --time-embed-dim 32  --node-attn-nhid 128 --transformer-nhid 1024 --transformer-nlayers 2 --transformer-nhead 2 --batch 20 --epochs 200 --use-embeddings True --name NewWeightsBertandCat --cat-embed-dim 32
+ 1566  cd poi-recommendation-TCC/
+ 1567  cd Code/
+ 1568  cd db_parser/
+ 1569  wget "https://download.bbbike.org/osm/bbbike/NewYork/NewYork.osm.pbf"
+ 1570  psql -U diogosilveira -d pois_gowalla
+ 1571  sudo psql -U diogosilveira -d pois_gowalla
+ 1572  psql
+ 1573  psql diogosilveira
+ 1574  psql postgres
+ 1575  psql -h localhost -U diogosilveira -d pois_gowalla
+ 1576  history > history_print.txt
