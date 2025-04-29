@@ -14,18 +14,21 @@ pip install -r requirements.txt
 ## Requirements
 
 ```
-torch==1.7.1
-numpy==1.19.2
-prettytable==2.0.0
-matplotlib==3.3.4
-scipy==1.6.1
-torch_summary==1.4.5
-tqdm==4.58.0
-pandas==1.1.5
 data==0.4
-PyYAML==6.0
-scikit_learn==1.0.2
+torch==2.6.0
+torch-summary==1.4.5
 torchsummary==1.5.1
+numba==0.56.4
+numpy==2.2.4
+gensim==3.6.0
+prettytable==3.14.0
+matplotlib==3.10.0
+scipy==1.15.2
+tqdm==4.67.1
+pandas==2.2.3
+PyYAML==6.0.2
+scikit-learn==1.6.1
+jupyter-notebook
 ```
 
 ## Train
