@@ -8,7 +8,7 @@ POI recommendation has gained prominence in the context of recommendation system
 Traditional POI recommendation systems are often limited to considering information such as location reviews, photos, access times and check-ins, neglecting relevant geographic data such as geographic features that include rivers, buildings, streets and lakes in the context of a POI. . These features can significantly influence user preferences.
 
 ## Proposed solution
-In this study, we propose and evaluate the use of geographic embeddings that incorporate geographic features to improve POI recommendation systems.
+In this study, we propose and evaluate the use of different embeddings that incorporate geospatial features to improve POI recommendation systems.
 
 ## Results
 The results indicated that the use of embeddings that consider features increased accuracy and MRR by up to 1.65% in the task of recommending the next POI in the dataset used, compared to the baseline, confirming the importance of geographic features to improve geographic features. POI recommendation.
